@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09DB1AA3FD10F120F1AED401 /* Pods_Awesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C732A9DF918B981B079A7DCF /* Pods_Awesome.framework */; };
 		BA35E3A71F390D9B0042ED39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35E3A61F390D9B0042ED39 /* AppDelegate.swift */; };
 		BA35E3A91F390D9B0042ED39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35E3A81F390D9B0042ED39 /* ViewController.swift */; };
 		BA35E3AC1F390D9B0042ED39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35E3AA1F390D9B0042ED39 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BBE765548691E5A84F1DCAB /* Pods-Awesome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome/Pods-Awesome.release.xcconfig"; sourceTree = "<group>"; };
+		7308D82749FB8C903442BFE7 /* Pods-Awesome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome/Pods-Awesome.debug.xcconfig"; sourceTree = "<group>"; };
 		BA35E3A31F390D9B0042ED39 /* Awesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35E3A61F390D9B0042ED39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA35E3A81F390D9B0042ED39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		BA35E3C21F390D9B0042ED39 /* AwesomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35E3C61F390D9B0042ED39 /* AwesomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeUITests.swift; sourceTree = "<group>"; };
 		BA35E3C81F390D9B0042ED39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C732A9DF918B981B079A7DCF /* Pods_Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DB1AA3FD10F120F1AED401 /* Pods_Awesome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D0CA27472506ECD86FFC0C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C732A9DF918B981B079A7DCF /* Pods_Awesome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA35E39A1F390D9A0042ED39 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				BA35E3BA1F390D9B0042ED39 /* AwesomeTests */,
 				BA35E3C51F390D9B0042ED39 /* AwesomeUITests */,
 				BA35E3A41F390D9B0042ED39 /* Products */,
+				F414685D54205122D595E8F3 /* Pods */,
+				2D0CA27472506ECD86FFC0C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = AwesomeUITests;
 			sourceTree = "<group>";
 		};
+		F414685D54205122D595E8F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7308D82749FB8C903442BFE7 /* Pods-Awesome.debug.xcconfig */,
+				0BBE765548691E5A84F1DCAB /* Pods-Awesome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA35E3CB1F390D9B0042ED39 /* Build configuration list for PBXNativeTarget "Awesome" */;
 			buildPhases = (
+				1DEB5FC5DA6B43E5462443D7 /* [CP] Check Pods Manifest.lock */,
 				BA35E39F1F390D9A0042ED39 /* Sources */,
 				BA35E3A01F390D9A0042ED39 /* Frameworks */,
 				BA35E3A11F390D9A0042ED39 /* Resources */,
+				1DDB36BFC052CAE4419EEBF6 /* [CP] Embed Pods Frameworks */,
+				7916B8F6490FE61AB33812F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDB36BFC052CAE4419EEBF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Awesome/Pods-Awesome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DEB5FC5DA6B43E5462443D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7916B8F6490FE61AB33812F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Awesome/Pods-Awesome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA35E39F1F390D9A0042ED39 /* Sources */ = {
@@ -415,6 +490,7 @@
 		};
 		BA35E3CC1F390D9B0042ED39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7308D82749FB8C903442BFE7 /* Pods-Awesome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NR4FW2832B;
@@ -428,6 +504,7 @@
 		};
 		BA35E3CD1F390D9B0042ED39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBE765548691E5A84F1DCAB /* Pods-Awesome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NR4FW2832B;
