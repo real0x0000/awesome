@@ -15,6 +15,8 @@
 		BA35E3B11F390D9B0042ED39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA35E3AF1F390D9B0042ED39 /* LaunchScreen.storyboard */; };
 		BA35E3BC1F390D9B0042ED39 /* AwesomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35E3BB1F390D9B0042ED39 /* AwesomeTests.swift */; };
 		BA35E3C71F390D9B0042ED39 /* AwesomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35E3C61F390D9B0042ED39 /* AwesomeUITests.swift */; };
+		BA35E3D51F391A4B0042ED39 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35E3D41F391A4B0042ED39 /* ViewModel.swift */; };
+		BA35E3D71F391A830042ED39 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA35E3D61F391A830042ED39 /* Content.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		BA35E3C21F390D9B0042ED39 /* AwesomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA35E3C61F390D9B0042ED39 /* AwesomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeUITests.swift; sourceTree = "<group>"; };
 		BA35E3C81F390D9B0042ED39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA35E3D41F391A4B0042ED39 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BA35E3D61F391A830042ED39 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C732A9DF918B981B079A7DCF /* Pods_Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,8 @@
 			children = (
 				BA35E3A61F390D9B0042ED39 /* AppDelegate.swift */,
 				BA35E3A81F390D9B0042ED39 /* ViewController.swift */,
+				BA35E3D41F391A4B0042ED39 /* ViewModel.swift */,
+				BA35E3D61F391A830042ED39 /* Content.swift */,
 				BA35E3AA1F390D9B0042ED39 /* Main.storyboard */,
 				BA35E3AD1F390D9B0042ED39 /* Assets.xcassets */,
 				BA35E3AF1F390D9B0042ED39 /* LaunchScreen.storyboard */,
@@ -338,7 +344,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA35E3A91F390D9B0042ED39 /* ViewController.swift in Sources */,
+				BA35E3D51F391A4B0042ED39 /* ViewModel.swift in Sources */,
 				BA35E3A71F390D9B0042ED39 /* AppDelegate.swift in Sources */,
+				BA35E3D71F391A830042ED39 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +601,7 @@
 				BA35E3CD1F390D9B0042ED39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA35E3CE1F390D9B0042ED39 /* Build configuration list for PBXNativeTarget "AwesomeTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +610,7 @@
 				BA35E3D01F390D9B0042ED39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA35E3D11F390D9B0042ED39 /* Build configuration list for PBXNativeTarget "AwesomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +619,7 @@
 				BA35E3D31F390D9B0042ED39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
