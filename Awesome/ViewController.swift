@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import SDWebImage
 import UIKit
 
 class ViewController: UIViewController {
@@ -42,6 +43,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func initTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.estimatedRowHeight = 30
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.setNeedsLayout()
+        tableView.layoutIfNeeded()
         tableView.tableFooterView = UIView()
     }
     
@@ -56,16 +61,42 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }
 
 class ViewCell: UITableViewCell {
     
     @IBOutlet weak var trackView: UIView!
+    @IBOutlet weak var trackTitle: UILabel!
+    @IBOutlet weak var trackImageView: UIImageView!
     @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var adsView: UIView!
+    @IBOutlet weak var adsImageView: UIImageView!
     
     func apply(_ content: Content) {
-        
+        switch content.type {
+        case "ads":
+            adsView.isHidden = false
+            trackView.isHidden = true
+            videoView.isHidden = true
+            adsImageView.sd_setImage(with: URL(string: "\(content.cover)"))
+        case "track":
+            adsView.isHidden = true
+            trackView.isHidden = false
+            videoView.isHidden = true
+            trackTitle.text = content.name
+            trackImageView.sd_setImage(with: URL(string: "\(content.cover)"))
+        case "video":
+            adsView.isHidden = true
+            trackView.isHidden = true
+            videoView.isHidden = false
+            videoImageView.sd_setImage(with: URL(string: "\(content.cover)"))
+        default: break
+        }
     }
     
 }
